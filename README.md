@@ -10,5 +10,5 @@ Enter the following command on the command line to get the required toolkit:
  
  Generally, we choose `0.20` as the EAR threshold, and when the calculated EAR is greater than 0.25, we output eyes open on the image.
 When we detect eyes closed in 20 out of 300 frames, we will output drowsiness detect and activate `alarm=True`. When `alarm==true`, the system will issue an alarm. (alarm section is included in one-file-with-alarm)
-
+We use a simplified version of the `PERCLOS` formula, which I will judge as fatigue when I detect 4 frames of eye closure out of every 10 frames.
  
